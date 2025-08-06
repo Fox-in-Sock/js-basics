@@ -49,62 +49,88 @@
 
 
 
-      let arr = [1,2,3,4,5];
-      document.write(arr);
-      document.write("<br>" + arr.length);
-      document.write("<br>"+arr[arr.length-1]);
+      // let arr = [1,2,3,4,5];
+      // document.write(arr);
+      // document.write("<br>" + arr.length);
+      // document.write("<br>"+arr[arr.length-1]);
 
-      let fruits = ["apple","mango","pear"];
-      document.write("<br>org arr is",fruits);
-      //for adding push
-      fruits.push("orange");
-      fruits.unshift("pop");
-      document.write("<br>unshift: ",fruits);
-      let rem = fruits.pop();
-      document.write("<br>pop: ",fruits);
-      document.write("<br>remop: ",rem);
+      // let fruits = ["apple","mango","pear"];
+      // document.write("<br>org arr is",fruits);
+      // //for adding push
+      // fruits.push("orange");
+      // fruits.unshift("pop");
+      // document.write("<br>unshift: ",fruits);
+      // let rem = fruits.pop();
+      // document.write("<br>pop: ",fruits);
+      // document.write("<br>remop: ",rem);
 
-      //splice(index,num,new member)
+      // //splice(index,num,new member)
 
-      rem = fruits.splice(1,1,"papay",'pe','grape')
-      document.write("<br>splice:",fruits)
-      document.write("<br>removed:",rem)
-      fruits.fill('bit',2,5);
-      document.write("<br>fill: ",fruits);
-      let new_arr = fruits.slice(2.5);
-      document.write("<br>or: ",fruits);
-      document.write("<br>new: ",new_arr);
-      let veg = ["po","toma","ca"];
-      new_arr = fruits.concat(veg,"cabbage","onion");
-      document.write(new_arr);
-      let [a,b, ...c]=fruits
-      document.write("a = ",a);
-      document.write("b = ",b);
-      new_arr = [...fruits,...veg];
-      document.write("new arr ",new_arr);
-      for(let fruit of fruits){
-        document.write("<li>",fruit,"<li>");
-      }
-      let person = {
-        name: "ran",
-        age:20,
-        add:"ktm"
-      }
-      for(let k in person){
-        document.write("<br>",k,":",person[k]);
-      }
+      // rem = fruits.splice(1,1,"papay",'pe','grape')
+      // document.write("<br>splice:",fruits)
+      // document.write("<br>removed:",rem)
+      // fruits.fill('bit',2,5);
+      // document.write("<br>fill: ",fruits);
+      // let new_arr = fruits.slice(2.5);
+      // document.write("<br>or: ",fruits);
+      // document.write("<br>new: ",new_arr);
+      // let veg = ["po","toma","ca"];
+      // new_arr = fruits.concat(veg,"cabbage","onion");
+      // document.write(new_arr);
+      // let [a,b, ...c]=fruits
+      // document.write("a = ",a);
+      // document.write("b = ",b);
+      // new_arr = [...fruits,...veg];
+      // document.write("new arr ",new_arr);
+      // for(let fruit of fruits){
+      //   document.write("<li>",fruit,"<li>");
+      // }
+      // let person = {
+      //   name: "ran",
+      //   age:20,
+      //   add:"ktm"
+      // }
+      // for(let k in person){
+      //   document.write("<br>",k,":",person[k]);
+      // }
 
-      fruits.map((item,index) => {
-        document.write("<h3>",index, ")", item,"<h3>")
-      });
-      let new_fruits = fruits.filter(member => member.match("ap"))
-      document.write("filter",new_fruits)
-      num = [1,2,3,4,5,6,7]
-      let sum = num.reduce((acc,curr)=>{
+      // fruits.map((item,index) => {
+      //   document.write("<h3>",index, ")", item,"<h3>")
+      // });
+      // let new_fruits = fruits.filter(member => member.match("ap"))
+      // document.write("filter",new_fruits)
+      // num = [1,2,3,4,5,6,7]
+      // let sum = num.reduce((acc,curr)=>{
 
-      },0)
+      // },0)
+      
+      let body = document.getElementById('body')
+      body.style.backgroundColor = 'red'
+      body.style.height = '100vh'
+      let header  = document.createElement('header')
+      header.innerHTML= '<h1> hello</h1>'
+
+      body.appendChild(header)
+      let menuitems = ["home","about","blogs"]
+      let menu = document.createElement('ul')
+      menuitems.map(menuitem=>{
+        let item = eu83;
+      })
+
+
+      let pdcheck = "password";
+      const show_hide = ()=>{
+      let pdinput = document.getElementById('pwd')[0]
+      if (pdcheck == "password"){
+        pdcheck = "text"
+        pdcheck
+      }}
+
       
 
+
   </script>
+  <button onclick="sho"
+  <input type="password" id ="pwd" name = "pwd"></button>
 </body>
 </html>   
